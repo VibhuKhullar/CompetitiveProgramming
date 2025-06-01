@@ -38,6 +38,9 @@ class FunctionalGraph
     // Assign Components
     void assign_components(int u)
     {
+        //-> Return if node was visited before
+        if(comp[u] > -1)    return;
+
         if(comp[u] == -1)
         {
             //-> Mark circle components
