@@ -40,11 +40,11 @@ class XOR_Basis
     }
 
 
-    int k_smallest_xor(int k, int def)  // return def if number of distinct xors are less than k
+    T k_smallest_xor(T k, T def)  // return def if number of distinct xors are less than k
     {
         if(k > (1 << basis))    return def;
 
-        int res = 0;
+        T res = 0;
 
         int part_size = 1 << (basis - 1);   // size of common part after the first (0 or 1)
 
